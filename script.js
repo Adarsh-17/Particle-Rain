@@ -29,7 +29,6 @@ myImage.addEventListener('load', function(){
     }
     mappedImage[y][x] = brightness;
   }
-  console.log(mappedImage)
   function animatePixels() {
     ctx.drawImage(myImage, 0, 0, canvas.width, canvas.height);
     ctx.globalAlpha = 0.05;
@@ -60,9 +59,8 @@ myImage.addEventListener('load', function(){
     update() {
         this.positionX = Math.floor(this.x);
         this.positionY = Math.floor(this.y);
-        console.log(this.positionX, this.positionY, this.y, mappedImage.length, mappedImage[0].length);
         this.speed = mappedImage[this.positionY][this.positionX];
-        let movement = (maxBrightness - this.speed) + this.velocity;
+        let movement = (maxBrightness - this.speed) * 1.5 + this.velocity;
         if(movement>=0){
             this.y += movement;
         }

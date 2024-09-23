@@ -4,8 +4,7 @@ This project creates a particle-based animation where particles move in response
 
 ## Demo
 
-[Watch the video demo here!](https://adarsh-17.github.io/Particle-Rain/)
-
+[Live demo here!](https://adarsh-17.github.io/Particle-Rain/)
 
 Particles are initialized on top of the image and move downward based on the brightness of each pixel in the image. Brighter areas result in slower particle movement, while darker areas cause particles to fall faster.
 

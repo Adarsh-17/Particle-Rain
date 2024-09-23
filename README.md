@@ -23,7 +23,7 @@ Particles are initialized on top of the image and move downward based on the bri
 
 ## How It Works
 
-1. **Load Image:** The image (`batman.png`) is loaded into the browser using the `Image()` object and drawn onto the canvas.
+1. **Load Image:** The image (`image.png`) is loaded into the browser using the `Image()` object and drawn onto the canvas.
 2. **Image Brightness Mapping:** The brightness of each pixel in the image is calculated using relative brightness formulas, taking the red, green, and blue (RGB) values.
 3. **Particle Movement:** Particles are initialized at random positions along the top of the canvas. They fall downwards at varying speeds depending on the brightness of the pixels below them.
 4. **Animation Loop:** A continuous loop (`requestAnimationFrame`) ensures particles are updated and rendered frame by frame.

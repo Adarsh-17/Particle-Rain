@@ -1,5 +1,6 @@
 const myImage = new Image();
 myImage.src = "image.png";
+console.log("Script loaded");
 
 myImage.addEventListener('load', function(){
   const canvas = document.getElementById("canvas");
